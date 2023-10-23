@@ -65,10 +65,10 @@ def predict_fraud(features):
     prediction = model.predict(X)
     
     if prediction[0] == 1:
-        message="Aww NOO! You're a fraud!"
+        message="AWOO! You're a fraud! :ghost:"
         return message
     else:
-        message="AWOO! You're good!"
+        message="Aww. You're good! :angel:"
         return message
     
     
