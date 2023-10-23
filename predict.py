@@ -1,4 +1,4 @@
-import streamlit as st
+gigiimport streamlit as st
 import pickle
 import numpy as np
 import pandas as pd
@@ -198,8 +198,8 @@ def main():
     st.markdown("Unmasking Deception, One Step Ahead!")
     # CUSTOMER DETAILS
     st.subheader(":dollar:  Transaction Details 	:dollar:", anchor=None, help=None, divider=False)
-    amt=st.number_input("Amount of Transaction", 0, 20000)
-    recency=st.number_input("How recent is the transaction?",0, 11214160)
+    amt=st.number_input("Amount of Transaction (in Php)", 0, 20000)
+    recency=st.number_input("How recent is the transaction (in seconds)?",0, 11214160)
     category= st.selectbox(
                 "Type of Transaction",
                     options=category_options
@@ -219,15 +219,15 @@ def main():
                     'No']
                 )
     t0_outlier_answer=st.selectbox(
-                "Is the transaction tagged as an outlier?",
+                "Is the transaction outside of the usual transaction time of the user?",
                     options=['Yes',
                     'No']
                 )
     # CUSTOMER DETAILS
     st.subheader(":money_mouth_face: Customer Details :money_mouth_face:", anchor=None, help=None, divider=False)
     city_pop=st.number_input("Population of Customer's City", 0, 500000)
-    distance=st.number_input("How far is the customer from the merchant?", 0, 155)
-    freq_pop_ratio=st.number_input("What is the frequency of transaction to population ratio?", 0.0,1.0)
+    distance=st.number_input("How far is the customer from the merchant (in km)?", 0, 155)
+    freq_pop_ratio=st.number_input("What is the ratio of total transactions in the city to the population of the city?", 0.0,1.0)
     km_per_trans=st.number_input("What is the distance travelled by customer between transactions? (km/transaction)", 0, 300)
     kmph=st.number_input("What is the rate of customer travel in between transactions? (kmph)",0, 795000)
     job_category= st.selectbox(
