@@ -1,0 +1,11 @@
+[theme] # You have to add this line
+
+primaryColor = '#D35400' # Bright Orange
+
+backgroundColor = '#0E1111' # Black
+
+secondaryBackgroundColor = '#6E2C00' # Orange
+
+textColor="#F4F6F7"
+
+font="monospace"
