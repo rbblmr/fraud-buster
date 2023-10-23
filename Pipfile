@@ -24,6 +24,7 @@ ipykernel = "*"
 matplotlib = "*"
 streamlit = "*"
 imblearn = "*"
+importlib_metadata="*"
 
 [dev-packages]
 ipykernel = "*"
